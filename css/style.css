@@ -67,24 +67,6 @@ header{
     padding: 7.5px;
 }
 
-@-webkit-keyframes hello_wiggle{
-  0%   {background-color: orange;}
-  50%  {background-color: yellow;}
-  100% {background-color: orange;}  
-}
-  
-@keyframes hello_wiggle{
-  0%   {background-color: orange;}
-  50%  {background-color: yellow;}
-  100% {background-color: orange;}  
-} 
-
-#hello {
-    animation-name: hello_wiggle;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    text-align: center;
-}
 
 .gallery{
     min-height: 200px;
@@ -208,10 +190,4 @@ h2 {
 
 .list-item {
   padding-left: 15px;
-}
-
-@media screen and (prefers-reduced-motion: reduce){
-  #hello{
-      animation: none;
-  }
 }
