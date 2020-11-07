@@ -1,0 +1,217 @@
+body{
+  font-family: 'Verdana, Geneva, sans-serif';
+  margin: 0;
+  padding: 0;
+  font-size: 16pt;
+  background-color: rgba(142, 238, 178, 0.63);
+}
+  
+h1{
+  font-size: 2em;
+  text-align: left;
+  line-height: 2;
+}
+  
+h2{
+  font-size: 1.5em;
+  text-align: left;
+  padding: 5px;
+}
+
+p{
+    padding: 30px;
+    text-align: center;
+}
+
+.skip a{
+    background: rgba(106, 197, 209, 0.63);
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    color: black;
+  
+    /*Your code here*/
+    position: absolute;
+    top: -40px;
+}
+
+.skip a:focus {
+    top: 0px;
+}
+
+header{
+  background: lightblue;
+  border: 3px solid #50C7C7;
+  align-items: center;
+}
+  
+.nav_links{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.nav_item a{
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  display: block;
+  text-align: center;
+}  
+
+.active a{
+    background-color: blue;
+    color: white;
+    padding: 7.5px;
+}
+
+@-webkit-keyframes hello_wiggle{
+  0%   {background-color: orange;}
+  50%  {background-color: yellow;}
+  100% {background-color: orange;}  
+}
+  
+@keyframes hello_wiggle{
+  0%   {background-color: orange;}
+  50%  {background-color: yellow;}
+  100% {background-color: orange;}  
+} 
+
+#hello {
+    animation-name: hello_wiggle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    text-align: center;
+}
+
+.gallery{
+    min-height: 200px;
+    /*Your code here again.*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+img{
+  max-width: 100%;
+}
+
+.gallery > img {
+    margin: auto;
+    max-width: 350px;
+    max-height: 300px;
+}
+
+footer {
+    background: lightblue;
+    text-align: center;
+    color: black;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.tech-skills {
+  display: flex;
+  height: 300px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.item { 
+  width: 14%;
+  border: 2px solid black;
+  background-color: #50C7C7; 
+}
+.python-prof { 
+  height: 40%; 
+}
+.java-prof {
+  height: 50%; 
+}
+.R-prof {
+  height: 60%;
+}
+.HTML-prof {
+  height: 20%;
+}
+.CSS-prof {
+  height: 30%;
+}
+.SQL-prof {
+  height: 30%;
+}
+
+.contact-img {
+  max-width: 200px;
+  max-height: 200px;
+  margin: auto;
+}
+
+.contact-img img {
+  border: 3px solid black;
+}
+
+.resume {
+  padding: 10px 0px;
+  border: 5px solid black;
+  border-style: solid none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto auto auto;
+  grid-row-gap: 20px;
+}
+
+.desc {
+  border: 5px solid black;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+}
+
+h2 {
+  font-family: 'impact, Charcoal, sans-serif';
+  text-align: center;
+  text-decoration: underline;
+}
+
+.about-page {
+  border: 3px solid black;
+  padding: 10px;
+}
+
+.gall-img {
+  opacity: 0.75;
+  border: 3px solid rgb(179, 84, 84);
+}
+
+.gall-img:hover {
+  opacity: 1.0;
+  border: 3px solid black;
+}
+
+.skill-list {
+  list-style-type: decimal;
+}
+
+.skills {
+  border: 3px solid black;
+  padding: 5px;
+}
+
+.list-item {
+  padding-left: 15px;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  #hello{
+      animation: none;
+  }
+}
