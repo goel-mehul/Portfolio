@@ -27,15 +27,13 @@ p{
 }
 
 .skip a{
-    background: rgba(106, 197, 209, 0.63);
+    background: rgba(0, 0, 0, 0.63);
     left: 0;
     padding: 6px;
-    -webkit-transition: top 1s ease-out;
-    transition: top 1s ease-out;
+    -webkit-transition: top 0.5s ease-out;
+    transition: top 0.5s ease-out;
     z-index: 1;
-    color: black;
-  
-    /*Your code here*/
+    color: white;
     position: absolute;
     top: -40px;
 }
