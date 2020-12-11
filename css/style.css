@@ -1,9 +1,10 @@
 body{
-  font-family: 'Verdana, Geneva, sans-serif';
+  font-family: 'font-family: "Helvetica Neue", Helvetica, Arial, sans-serif';
   margin: 0;
+  line-height: 1.5;
   padding: 0;
   font-size: 16pt;
-  background-color: rgba(142, 238, 178, 0.63);
+  background-color: rgba(121, 196, 150, 0.63);
 }
   
 h1{
@@ -44,14 +45,15 @@ p{
 }
 
 header{
-  background: lightblue;
-  border: 3px solid #50C7C7;
+  background: rgb(135, 210, 235);
+  border: 3px solid #4fdada;
   align-items: center;
 }
   
 .nav_links{
   display: flex;
   flex-direction: column;
+  padding: 0px;
 }
 
 
@@ -88,7 +90,7 @@ img{
 }
 
 footer {
-    background: lightblue;
+    background: rgb(135, 210, 235);
     text-align: center;
     color: black;
     left: 0px;
@@ -107,24 +109,6 @@ footer {
   width: 14%;
   border: 2px solid black;
   background-color: #50C7C7; 
-}
-.python-prof { 
-  height: 40%; 
-}
-.java-prof {
-  height: 50%; 
-}
-.R-prof {
-  height: 60%;
-}
-.HTML-prof {
-  height: 20%;
-}
-.CSS-prof {
-  height: 30%;
-}
-.SQL-prof {
-  height: 30%;
 }
 
 .contact-img {
@@ -168,6 +152,46 @@ h2 {
 .about-page {
   border: 3px solid black;
   padding: 10px;
+  
+}
+
+.flip-scale-up-ver {
+	-webkit-animation: flip-scale-up-ver 0.5s linear forwards;
+	        animation: flip-scale-up-ver 0.5s linear forwards;
+}
+
+@-webkit-keyframes flip-scale-up-ver {
+  0% {
+    -webkit-transform: scale(1) rotateY(0);
+            transform: scale(1) rotateY(0);
+  }
+  50% {
+    -webkit-transform: scale(2.5) rotateY(90deg);
+            transform: scale(2.5) rotateY(90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateY(180deg);
+            transform: scale(1) rotateY(180deg);
+  }
+}
+@keyframes flip-scale-up-ver {
+  0% {
+    -webkit-transform: scale(1) rotateY(0);
+            transform: scale(1) rotateY(0);
+  }
+  50% {
+    -webkit-transform: scale(2.5) rotateY(90deg);
+            transform: scale(2.5) rotateY(90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateY(180deg);
+            transform: scale(1) rotateY(180deg);
+  }
+}
+
+
+li {
+  padding: 0px;
 }
 
 .gall-img {
@@ -191,4 +215,67 @@ h2 {
 
 .list-item {
   padding-left: 15px;
+}
+
+@media screen and (min-width: 500px){
+
+  .nav_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nav_item{
+    width: 200%;
+    border: 1px solid black;    
+  } 
+
+  .nav_item a {
+    border: none;
+  }
+
+  .home-pic {
+    max-height: 450px;
+
+  }
+
+}
+
+@media screen and (min-width: 900px){
+
+  .nav_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nav_item{
+    width: 200%;
+    border: 1px solid black;    
+  } 
+
+  .nav_item a {
+    border: none;
+  }
+
+  .home-pic {
+    max-height: 600px;
+
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .grid1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  /*.intro-pic {
+    margin-left: auto;
+    margin-right: auto;
+  }*/
 }
