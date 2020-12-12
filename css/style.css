@@ -198,6 +198,7 @@ footer {
   /* About Page*/
   .home-pic {
     max-height: 450px;
+    display: block;
   }
 }
 
@@ -224,7 +225,10 @@ footer {
   /* About Page */
   .home-pic {
     max-height: 600px;
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
   }
 
   .about-grid {
